@@ -8,15 +8,28 @@ This project was developed as part of my second year in Mechatronics. My respons
 
 ## Project demonstration
 
-The complete 3-minute project demonstration is available in [`media/videos/AI-Powered_Drone_Full_Demonstration.mp4`](media/videos/AI-Powered_Drone_Full_Demonstration.mp4).
+The full project video presents the drone, its electronics, the flight-control system, and the aerial image-detection concept. These short GIFs provide quick previews; the complete 3-minute recording is linked below.
 
+### Demonstration highlight 1
+
+An excerpt from the project demonstration.
 ![Drone demonstration highlight](media/gifs/drone-demo-highlight-1.gif)
 
+### Demonstration highlight 2
+
+Another excerpt from the project demonstration.
 ![Drone demonstration highlight](media/gifs/drone-demo-highlight-2.gif)
 
+### Demonstration highlight 3
+
+A third short excerpt from the project demonstration.
 ![Drone demonstration highlight](media/gifs/drone-demo-highlight-3.gif)
 
+**Full video:** [AI-Powered Drone demonstration](media/videos/AI-Powered_Drone_Full_Demonstration.mp4)
+
 ## System architecture
+
+The project combines a custom quadcopter, wireless manual controls, a flight controller, environmental sensing, and an aerial-imaging pipeline.
 
 | Subsystem | Hardware and implementation |
 | --- | --- |
@@ -50,7 +63,15 @@ The firmware measures each joystick at the center position, calculates offsets, 
 
 **Files:** [`firmware/transmitter/Transmitter.ino`](firmware/transmitter/Transmitter.ino)
 
+### Assembled transmitter and PCB
+
+The transmitter PCB brings together the ESP32, joystick modules, nRF24L01 radio, switches, power regulation, and OLED interface.
 ![Custom transmitter PCB and hardware](hardware/pcb/Transmitter_PNG.png)
+
+### Transmitter PCB routing design
+
+This Proteus PCB layout shows the transmitter board routing and component footprints used to connect the controller, joystick inputs, radio, and display.
+![Transmitter PCB routing layout](hardware/pcb/Picture3.png)
 
 ## Receiver
 
@@ -74,98 +95,150 @@ When the signal switch is inactive, the receiver sends neutral 1000-microsecond 
 
 **Files:** [`firmware/receiver/Receiver.ino`](firmware/receiver/Receiver.ino)
 
+### Assembled receiver and power board
+
+The receiver PCB combines the Arduino Nano, nRF24L01 radio interface, connectors, and step-down power section for the airborne control link.
 ![Custom receiver PCB and hardware](hardware/pcb/Reciever_PNG.png)
+
+### Receiver PCB routing design
+
+This Proteus routing view documents the receiver board connections and connector footprints used to pass the radio control channels to the flight controller.
+![Receiver PCB routing layout](hardware/pcb/Screenshot%202025-06-26%20160215.png)
 
 ## PCB and electronics
 
-Proteus PCB designs and rendered PCB images are provided for the transmitter and receiver.
+The electronics work includes separate transmitter and receiver/step-down PCB designs. The Proteus project files are included for inspecting the board layouts and component connections.
 
 - [Transmitter PCB design](hardware/pcb/MG_Drone_Transmitter.pdsprj)
 - [Receiver and step-down PCB design](hardware/pcb/MG_Drone_Reciever&StepDown.pdsprj)
-- [Transmitter PCB render](hardware/pcb/Transmitter_PNG.png)
-- [Receiver PCB render](hardware/pcb/Reciever_PNG.png)
-- [Additional transmitter/receiver PCB image](hardware/pcb/Picture3.png)
-- [PCB hardware screenshot](hardware/pcb/Screenshot%202025-06-26%20160215.png)
 
-The PCB work integrates radio modules, microcontrollers, control switches, joystick/display wiring, PWM outputs, and power regulation. Low-voltage regulation is separated from the flight power path, and ground and supply connections must be checked against the final assembly before energizing the system.
+The designs integrate the radio modules, microcontrollers, control switches, joystick/display wiring, PWM outputs, and power regulation. Low-voltage regulation is separated from the flight power path; verify supply rails, grounds, and pin mapping against the assembled hardware before powering it.
 
 ## IoT monitoring
 
-An ESP8266 reads DHT11 temperature and humidity data and publishes the measurements to Blynk virtual pins V0 and V1. The project includes Android, iOS, and PC dashboard views.
+An ESP8266 reads temperature and humidity from a DHT11 and publishes the readings to Blynk virtual pins V0 and V1. The project includes mobile and desktop dashboard examples.
 
 **Files:** [`firmware/iot/IOT_final.ino`](firmware/iot/IOT_final.ino)
 
 Before compiling, replace the placeholder Wi-Fi and Blynk credentials in the source.
 
-![Android IoT dashboard](media/photos/iot/Android.jpg)
+### Android dashboard
 
+The Android dashboard shows live humidity and temperature gauges and their recent readings.
+![Android IoT dashboard](media/photos/iot/Android.jpg)
 ![Android IoT dashboard](media/photos/iot/Android2.jpg)
 
+### iOS dashboard
+
+The iOS capture documents the mobile monitoring interface for the sensor data.
 ![iOS IoT dashboard](media/photos/iot/IOS.jpg)
 
+### PC dashboard
+
+The PC dashboard provides a desktop view of the same IoT monitoring project.
 ![PC IoT dashboard](media/photos/iot/PC.png)
 
-## Mechanical and development work
+## Mechanical Design and Development
 
+The mechanical work covers the quadcopter frame, its component assembly, and the CAD development workflow. The SolidWorks recording and an optimized GIF preview are provided below.
+
+### SolidWorks design process
+
+This video follows the drone assembly as it is developed and inspected in SolidWorks. The GIF is a short preview; the linked MP4 contains the complete attached design video.
+![SolidWorks drone design process](media/gifs/solidworks-design-process.gif)
+
+**Full video:** [SolidWorks drone design process](hardware/design/SolidWorks_Design_Process.mp4)
+
+### Drone model and assembled platform
+
+The rendered model and build photos show the quadcopter frame, motor-arm arrangement, propellers, and mounted electronics.
 ![SolidWorks-style drone render](media/photos/drone/drone-render.png)
-
 ![Drone assembly](media/photos/drone/drone-build.jpg)
-
 ![Drone assembly detail](media/photos/drone/drone-build-detail.jpg)
 
+### Structural stress analysis
+
+The included analysis image documents the structural review performed during the mechanical design stage.
 ![Stress analysis](hardware/design/Stress_Analysis.png)
 
-[SolidWorks design assembly video](media/videos/SolidWorks_Drone_Design.mp4)
+### Development photos
 
-Development images are collected under [`media/photos/development/`](media/photos/development/).
+These photos capture additional stages of prototype assembly and integration.
+[Browse development photos](media/photos/development/)
 
 ## Launch Exhibition 3 — 3rd place
 
-Our team placed **3rd among Egyptian universities** in mechatronics at the Launch Exhibition 3 competition and received a trophy.
+Our team placed **3rd among Egyptian universities** in mechatronics at the Launch Exhibition 3 competition and received a trophy. The following photos and clips document the project presentation and award moments.
 
+### Project presentation and team photos
+
+These exhibition photos show the drone project display, the award, and the project team.
 ![Me with my friend and the project award](media/photos/exhibition/friend-and-award.jpg)
-
 ![Team photo with the project award](media/photos/exhibition/team-and-award.jpg)
-
 ![Exhibition award presentation](media/photos/exhibition/exhibition-award-photo.jpg)
 
+### Award and trophy GIFs
+
+Short clips from the Launch Exhibition 3 folder highlight the award, trophy reveal, ceremony, and team moments.
 ![Receiving the trophy](media/gifs/launch-exhibition-award.gif)
-
-**Trophy reveal**
-
 ![Launch Exhibition trophy reveal](media/gifs/launch-exhibition-trophy-reveal.gif)
-
-**Award ceremony**
-
 ![Launch Exhibition award moment](media/gifs/launch-exhibition-award-moment.gif)
-
-**Team and exhibition moment**
-
 ![Launch Exhibition team moment](media/gifs/launch-exhibition-team-moment.gif)
 
-[Award-moment video](media/videos/Launch_Exhibition_Award_Moment.mp4)
+**Full video:** [Launch Exhibition award moment](media/videos/Launch_Exhibition_Award_Moment.mp4)
 
-Additional exhibition photos are in [`media/photos/exhibition/`](media/photos/exhibition/).
+**More photos:** [Launch Exhibition 3 gallery](media/photos/exhibition/)
 
 ## Mohamed Gamal — Project and Exhibition
 
+These selected photos identify Mohamed Gamal and document his project presentation, exhibition participation, and hands-on electronics work.
+
+### Presenting the drone
+
+A project-presentation photo of Mohamed Gamal beside the drone and project display.
 ![Mohamed Gamal presenting the drone project](media/photos/mohamed-gamal/mohamed-gamal-project-presentation.jpg)
 
+### With the project team
+
+Mohamed Gamal pictured with the project team during the exhibition.
 ![Mohamed Gamal with the project team](media/photos/mohamed-gamal/mohamed-gamal-team.jpg)
 
+### Project recognition
+
+A recognition-event photo documenting the project's public presentation.
 ![Mohamed Gamal at the recognition event](media/photos/mohamed-gamal/mohamed-gamal-recognition.jpg)
 
+### Electronics bench work
+
+Hands-on soldering and electronics assembly during the prototype development.
 ![Mohamed Gamal working on the electronics](media/photos/mohamed-gamal/mohamed-gamal-soldering.jpg)
+
+### Prototype electronics
+This additional image shows the transmitter and receiver electronics during hands-on development.
+![Mohamed Gamal prototype bench work](media/photos/mohamed-gamal/mohamed-gamal-bench-work.jpg)
 
 ## Institutional recognition
 
+The project was featured by the university, the Ministry of Higher Education and Scientific Research, and the Technologist Youth Federation.
+
+### Egyptian Ministry of Higher Education and Scientific Research
+
+A ministry feature recognizing the project and its participating university team.
 ![Egyptian Ministry of Higher Education and Scientific Research](media/photos/recognition/ministry-of-higher-education.png)
 
+### New Cairo Technological University
+
+The university's post describing the drone project and its competition result.
 ![New Cairo Technological University](media/photos/recognition/new-cairo-technological-university.png)
 
+### Union of Technology Youth
+
+A federation feature highlighting the project's smart-agriculture application and student team.
 ![Union of Technology Youth](media/photos/recognition/technology-youth-federation.png)
 
 ## Documentation
+
+The project booklet, poster, and presentations provide the written and visual background for the project.
 
 - [Project booklet PDF](documentation/Drone_Project_Booklet.pdf)
 - [Project poster PDF](documentation/Project_Poster.pdf)
