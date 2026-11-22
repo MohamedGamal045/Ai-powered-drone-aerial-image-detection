@@ -175,7 +175,6 @@ Our team placed **3rd among Egyptian universities** in mechatronics at the Launc
 These exhibition photos show the drone project display, the award, and the project team.
 ![Me with my friend and the project award](media/photos/exhibition/friend-and-award.jpg)
 ![Team photo with the project award](media/photos/exhibition/team-and-award.jpg)
-![Exhibition award presentation](media/photos/exhibition/exhibition-award-photo.jpg)
 
 ### Award and trophy GIFs
 
@@ -203,11 +202,6 @@ A project-presentation photo of Mohamed Gamal beside the drone and project displ
 Mohamed Gamal pictured with the project team during the exhibition.
 ![Mohamed Gamal with the project team](media/photos/mohamed-gamal/mohamed-gamal-team.jpg)
 
-### Project recognition
-
-A recognition-event photo documenting the project's public presentation.
-![Mohamed Gamal at the recognition event](media/photos/mohamed-gamal/mohamed-gamal-recognition.jpg)
-
 ### Electronics bench work
 
 Hands-on soldering and electronics assembly during the prototype development.
@@ -219,12 +213,7 @@ This additional image shows the transmitter and receiver electronics during hand
 
 ## Institutional recognition
 
-The project was featured by the university, the Ministry of Higher Education and Scientific Research, and the Technologist Youth Federation.
-
-### Egyptian Ministry of Higher Education and Scientific Research
-
-A ministry feature recognizing the project and its participating university team.
-![Egyptian Ministry of Higher Education and Scientific Research](media/photos/recognition/ministry-of-higher-education.png)
+The project was featured by New Cairo Technological University and the Technologist Youth Federation.
 
 ### New Cairo Technological University
 
