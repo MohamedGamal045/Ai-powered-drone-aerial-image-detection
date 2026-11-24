@@ -185,7 +185,7 @@ The project drone and competition trophy displayed together at Launch Exhibition
 
 Short clips from the Launch Exhibition 3 folder highlight the award, trophy reveal, ceremony, and team moments.
 ![Receiving the trophy](media/gifs/launch-exhibition-award.gif)
-![Launch Exhibition award moment](media/gifs/launch-exhibition-award-moment.gif)
+
 ![Launch Exhibition team moment](media/gifs/launch-exhibition-team-moment.gif)
 
 **Full video:** [Launch Exhibition award moment](media/videos/Launch_Exhibition_Award_Moment.mp4)
