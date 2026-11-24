@@ -175,7 +175,6 @@ Our team placed **3rd among Egyptian universities** in mechatronics at the Launc
 These exhibition photos show the drone project display, the award, and the project team.
 ![Me with my friend and the project award](media/photos/exhibition/friend-and-award.jpg)
 
-![Team photo with the project award](media/photos/exhibition/team-and-award.jpg)
 
 ### Drone and trophy display
 
